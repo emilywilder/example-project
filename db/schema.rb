@@ -18,4 +18,14 @@ ActiveRecord::Schema.define(version: 2019_03_05_152632) do
     t.integer "age"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "password_digest"
+    t.string "name"
+    t.string "avatar"
+    t.integer "age"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
